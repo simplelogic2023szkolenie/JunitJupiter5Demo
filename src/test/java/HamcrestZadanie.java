@@ -2,7 +2,6 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
@@ -46,7 +45,7 @@ public class HamcrestZadanie {
     @ValueSource(ints = {3, 23, 4, 6, 8, 7, 234, 123, 567, 86})
     @ParameterizedTest
     public void testNumberInRange(int inputNumber) {
-        assertThat("Number should be greater than 0 and less than 10", inputNumber, allOf(greaterThan(0), lessThan(10)));
+        assertThat(inputNumber, allOf(greaterThan(0), lessThan(10)));
     }
 
     @Test
