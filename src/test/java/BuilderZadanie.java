@@ -1,4 +1,4 @@
-public class BuilderZSad {
+public class BuilderZadanie {
 
 }
 
