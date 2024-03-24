@@ -1,9 +1,12 @@
-import lombok.AllArgsConstructor;
-import lombok.Getter;
+import lombok.*;
 
-@Getter
+
 @AllArgsConstructor
+@NoArgsConstructor
+@Getter
+@Setter
 public class Book {
+
     private String title;
     private int pages;
     private String author;
